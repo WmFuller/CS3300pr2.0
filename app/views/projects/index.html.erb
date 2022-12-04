@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Projects</h1>
+<h1><span style="border: 3px solid black;font-weight:bold;background-color:lightgreen">Projects</span></h1>
 
 <div id="projects">
   <% @projects.each do |project| %>
@@ -11,4 +11,5 @@
   <% end %>
 </div>
 
-<%= link_to "New project", new_project_path %>
+<a href="/projects/new" <span style="border: 2px solid black;font-weight:bold;background-color:lightgreen">New Project</span> </a>
+

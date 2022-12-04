@@ -21,6 +21,7 @@
         <% if user_signed_in? %>
           
           <div> Welcome <%= current_user.email %> </div>
+          <a href="http://localhost:3000/projects" <span style="border: 2px solid black;font-weight:bold">Projects</span></a> 
           <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
         
         <% else %>
