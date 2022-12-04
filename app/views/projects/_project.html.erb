@@ -1,16 +1,17 @@
+<style>
+  table, th, td {
+    border:1px solid black;
+    background-color:lightgrey
+  }
+</style>
+
 <div id="<%= dom_id project %>">
-  <p>
-    <span style="border: 2px solid black;font-weight:bold;">
-      <strong>Title:</strong>
-      <%= project.title %>
-    </span>
-  </p>
-
-  <p>
-    <span style="border: 1px solid black;font-weight:ariel;">
-      <strong>Description:</strong>
-      <%= project.description %>
-    </span>
-  </p>
-
+  <table style="width:100%">
+    <tr>
+     <td><strong>Title:</strong><%= project.title %></td>
+    </tr>
+    <tr>
+      <td><strong>Description:</strong><%= project.description %></td>
+    </tr>
+  </table>
 </div>

@@ -6,10 +6,13 @@
   <% @projects.each do |project| %>
     <%= render project %>
     <p>
-      <%= link_to "Show this project", project %>
+      <span style="border: 2px solid black;font-weight:bold;background-color:lightgreen">
+        <%= link_to "Show this project |", project %>
+        <a href="/projects/new"> New Project </a>
+      </span>
     </p>
   <% end %>
 </div>
 
-<a href="/projects/new" <span style="border: 2px solid black;font-weight:bold;background-color:lightgreen">New Project</span> </a>
+
 
